@@ -8,7 +8,7 @@ export type Project = {
 
 export const PROJECT_SLOTS = 6;
 
-function createSlot(index: number): Project {
+function createSlot(_value: unknown, index: number): Project {
   return { id: `slot-${index + 1}`, title: "", summary: "", tags: [], href: "" };
 }
 
